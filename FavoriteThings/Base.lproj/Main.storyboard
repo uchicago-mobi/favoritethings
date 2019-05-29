@@ -19,15 +19,15 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="DNX-Ld-uyS" kind="relationship" relationship="viewControllers" id="t8o-YX-nlw"/>
-                        <segue destination="g3W-Fd-6wP" kind="relationship" relationship="viewControllers" id="Els-WA-Wah"/>
+                        <segue destination="SGp-uy-ZQr" kind="relationship" relationship="viewControllers" id="t8o-YX-nlw"/>
+                        <segue destination="PyH-hs-pip" kind="relationship" relationship="viewControllers" id="Els-WA-Wah"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pnf-aw-Cqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-858" y="25"/>
         </scene>
-        <!--Birds-->
+        <!--Birds View Controller-->
         <scene sceneID="u3E-vu-RCn">
             <objects>
                 <tableViewController id="DNX-Ld-uyS" customClass="BirdsViewController" customModule="FavoriteThings" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,14 +50,14 @@
                             <outlet property="delegate" destination="DNX-Ld-uyS" id="O9C-Ew-JQC"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Birds" id="FrO-1w-xkL"/>
+                    <navigationItem key="navigationItem" id="uEA-ci-1y6"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlE-xw-QQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="154" y="405"/>
+            <point key="canvasLocation" x="1063.768115942029" y="404.46428571428572"/>
         </scene>
-        <!--Candies-->
+        <!--Candies View Controller-->
         <scene sceneID="zm4-kT-kRL">
             <objects>
                 <tableViewController id="g3W-Fd-6wP" customClass="CandiesViewController" customModule="FavoriteThings" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,12 +80,58 @@
                             <outlet property="delegate" destination="g3W-Fd-6wP" id="Li5-wc-sdE"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Candies" id="BNl-kX-IBw"/>
+                    <navigationItem key="navigationItem" id="cTy-OF-wmj"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9bv-Ld-fh2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1063.768115942029" y="-327.45535714285711"/>
+        </scene>
+        <!--Candies-->
+        <scene sceneID="Lo3-HG-mUR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PyH-hs-pip" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Candies" image="deselectedCandy" selectedImage="selectedCandy" id="BNl-kX-IBw"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TWt-2f-cwv">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94880563020706177" green="0.78370052576065063" blue="0.77796179056167603" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="g3W-Fd-6wP" kind="relationship" relationship="rootViewController" id="Pzm-Ha-gBL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PJv-5w-ZJu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="153.62318840579712" y="-327.45535714285711"/>
         </scene>
+        <!--Birds-->
+        <scene sceneID="hGl-dp-UrF">
+            <objects>
+                <navigationController title="Birds" automaticallyAdjustsScrollViewInsets="NO" id="SGp-uy-ZQr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Birds" image="deselectedBird" selectedImage="selectedBird" id="FrO-1w-xkL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TlO-89-PUI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.72104805707931519" green="0.9850202202796936" blue="0.027830932289361954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DNX-Ld-uyS" kind="relationship" relationship="rootViewController" id="6KB-nN-7YL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q8A-pa-iqa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="404.46428571428572"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="deselectedBird" width="25" height="25"/>
+        <image name="deselectedCandy" width="25" height="25"/>
+        <image name="selectedBird" width="25" height="25"/>
+        <image name="selectedCandy" width="25" height="25"/>
+    </resources>
 </document>

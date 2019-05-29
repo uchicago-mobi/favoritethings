@@ -16,6 +16,8 @@ class BirdsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Birds!"
+        
         self.tableView.dataSource = self
         self.tableView.delegate = self
         

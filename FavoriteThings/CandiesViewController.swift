@@ -15,6 +15,7 @@ class CandiesViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "Candies!"
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
