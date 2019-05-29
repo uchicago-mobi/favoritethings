@@ -16,7 +16,6 @@
 		7684CA73229E16E900094EA0 /* FavoriteThingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684CA72229E16E900094EA0 /* FavoriteThingsTests.swift */; };
 		7684CA7E229E177D00094EA0 /* CandiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684CA7D229E177D00094EA0 /* CandiesViewController.swift */; };
 		7684CA80229E17C300094EA0 /* BirdsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684CA7F229E17C300094EA0 /* BirdsViewController.swift */; };
-		7684CA82229E198000094EA0 /* FavoriteItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7684CA81229E198000094EA0 /* FavoriteItemCell.swift */; };
 		76963B5B229E201900D9A91E /* FavoriteFailure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76963B5A229E201900D9A91E /* FavoriteFailure.swift */; };
 		76963B5D229E246300D9A91E /* CandiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76963B5C229E246300D9A91E /* CandiesRepository.swift */; };
 		76963B5F229E248700D9A91E /* BirdsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76963B5E229E248700D9A91E /* BirdsRepository.swift */; };
@@ -49,7 +48,6 @@
 		7684CA74229E16E900094EA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7684CA7D229E177D00094EA0 /* CandiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandiesViewController.swift; sourceTree = "<group>"; };
 		7684CA7F229E17C300094EA0 /* BirdsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsViewController.swift; sourceTree = "<group>"; };
-		7684CA81229E198000094EA0 /* FavoriteItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemCell.swift; sourceTree = "<group>"; };
 		76963B5A229E201900D9A91E /* FavoriteFailure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteFailure.swift; sourceTree = "<group>"; };
 		76963B5C229E246300D9A91E /* CandiesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandiesRepository.swift; sourceTree = "<group>"; };
 		76963B5E229E248700D9A91E /* BirdsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsRepository.swift; sourceTree = "<group>"; };
@@ -97,18 +95,13 @@
 		7684CA59229E16E800094EA0 /* FavoriteThings */ = {
 			isa = PBXGroup;
 			children = (
-				7684CA81229E198000094EA0 /* FavoriteItemCell.swift */,
 				7684CA5A229E16E800094EA0 /* AppDelegate.swift */,
 				7684CA5C229E16E800094EA0 /* ViewController.swift */,
 				7684CA5E229E16E800094EA0 /* Main.storyboard */,
-				7684CA7D229E177D00094EA0 /* CandiesViewController.swift */,
-				76963B5C229E246300D9A91E /* CandiesRepository.swift */,
-				76963B64229E25BF00D9A91E /* Candy.swift */,
-				76963B66229E29F900D9A91E /* Bird.swift */,
+				76963B69229E317E00D9A91E /* Birds */,
+				76963B68229E316A00D9A91E /* Candies */,
 				76963B62229E251500D9A91E /* CollectionDelegate.swift */,
-				76963B5E229E248700D9A91E /* BirdsRepository.swift */,
 				76963B5A229E201900D9A91E /* FavoriteFailure.swift */,
-				7684CA7F229E17C300094EA0 /* BirdsViewController.swift */,
 				7684CA64229E16E900094EA0 /* Assets.xcassets */,
 				7684CA66229E16E900094EA0 /* LaunchScreen.storyboard */,
 				7684CA69229E16E900094EA0 /* Info.plist */,
@@ -124,6 +117,26 @@
 				7684CA74229E16E900094EA0 /* Info.plist */,
 			);
 			path = FavoriteThingsTests;
+			sourceTree = "<group>";
+		};
+		76963B68229E316A00D9A91E /* Candies */ = {
+			isa = PBXGroup;
+			children = (
+				7684CA7D229E177D00094EA0 /* CandiesViewController.swift */,
+				76963B5C229E246300D9A91E /* CandiesRepository.swift */,
+				76963B64229E25BF00D9A91E /* Candy.swift */,
+			);
+			path = Candies;
+			sourceTree = "<group>";
+		};
+		76963B69229E317E00D9A91E /* Birds */ = {
+			isa = PBXGroup;
+			children = (
+				76963B5E229E248700D9A91E /* BirdsRepository.swift */,
+				76963B66229E29F900D9A91E /* Bird.swift */,
+				7684CA7F229E17C300094EA0 /* BirdsViewController.swift */,
+			);
+			path = Birds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +247,6 @@
 				76963B65229E25BF00D9A91E /* Candy.swift in Sources */,
 				7684CA5D229E16E800094EA0 /* ViewController.swift in Sources */,
 				7684CA5B229E16E800094EA0 /* AppDelegate.swift in Sources */,
-				7684CA82229E198000094EA0 /* FavoriteItemCell.swift in Sources */,
 				76963B5F229E248700D9A91E /* BirdsRepository.swift in Sources */,
 				7684CA63229E16E800094EA0 /* FavoriteThings.xcdatamodeld in Sources */,
 				76963B67229E29F900D9A91E /* Bird.swift in Sources */,

@@ -9,5 +9,6 @@
 import Foundation
 
 enum FavoriteFailure: Error {
-    case invalidCell
+    case poorCandySelection
+    case poorTasteInBirds
 }
