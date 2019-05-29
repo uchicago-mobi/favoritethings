@@ -10,7 +10,7 @@ import Foundation
 
 class CandiesRepository: CollectionDelegate {
     typealias collectionItem = Candy
-    
+
     func getItems() -> [Candy] {
         return [
             Candy(name: "Reeses", fruitiness: 0, chocolatiness: 3, nuttiness: 5),
@@ -20,5 +20,4 @@ class CandiesRepository: CollectionDelegate {
             Candy(name: "Peanut Brittle", fruitiness: 0, chocolatiness: 0, nuttiness: 5),
         ]
     }
-    
 }

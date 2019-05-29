@@ -21,7 +21,7 @@ class BirdsViewController: UITableViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        self.birds = repository.getItems()
+        self.birds = repository.getItems().sorted(by: >)
         self.tableView.reloadData()
     }
     
