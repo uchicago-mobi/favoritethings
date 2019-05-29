@@ -43,7 +43,6 @@ class BirdsViewController: UITableViewController {
             fatalError("Invalid Cell!")
         }
         cell.textLabel?.text = bird.name
-        cell.detailTextLabel?.text = "a magnificent bird"
         
         return cell
     }}

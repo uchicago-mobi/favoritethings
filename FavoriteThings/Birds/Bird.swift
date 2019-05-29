@@ -14,5 +14,5 @@ struct Bird {
     let colors: [UIColor]
     let weight: Int
     let cuteness: Int
-    let scariness: Int    
+    let scariness: Int
 }
